@@ -7,16 +7,46 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    @keyframes Pulse {
+      0% {
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.99);
+      }
+      100% {
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
+}
 
-  .loader {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffbe0b;
-    border-radius: 50px;
-    color: #fff;
+.loader {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffbe0b;
+  border-radius: 50px;
+  color: #fff;
+  animation-iteration-count: infinite;
+}
+
+.animations {
+  .calltoaction {
+    @keyframes changeWidth {
+      0% {
+        background: #ffbe0b;
+      }
+
+      50% {
+        background: #ff006e;
+      }
+
+      100% {
+        background: #8338ec;
+      }
+    }
   }
 }

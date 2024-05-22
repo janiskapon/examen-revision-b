@@ -9,11 +9,22 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #a8dadc;
+  color: #1d3557;
+  transition: 0.3s;
+}
+
 .star {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 48px;
   cursor: pointer;
+}
+
+.star:hover {
+  transition: transform ease 0.3s;
+  transform: rotate(-0.25turn);
 }
 
 .article {
@@ -29,4 +40,10 @@
   margin-bottom: 12px;
   font-size: 24px;
   transition: transform 0.5s;
+}
+
+h2.article-title:hover {
+  font-size: 29px;
+  transition: 0.3s;
+  color: #1d3557;
 }
